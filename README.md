@@ -20,3 +20,15 @@
 
 ### Docker API
 
+
+### Docker Commands
+- ``` docker pull <name_of_image> ```
+- ``` docker run <name_of_image> ```
+- ``` docker build -t <name_of_image> ```
+- ``` docker commit <name_of_image/container-id> ```
+- ``` docker start <container-id> ```
+- ``` docker stop <container-id/name> ```
+- ``` docker rm <container-id/name> ```
+- ``` docker ps ```
+- ``` docker ps -a ``` to check existing containers
+
