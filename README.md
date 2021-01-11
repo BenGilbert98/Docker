@@ -44,4 +44,4 @@
 
 
 ### Copying a file to docker container
-- ``` docker cp <file_name> "<container_id>:<desired_file_path>"
+``` docker cp <file_name> "<container_id>:<desired_file_path>"```
