@@ -14,7 +14,7 @@
 - Docker is light weight and user friendly
 - Docker shares the resource of OS as opposed to using the OS completely
 - Docker engine connects the container with OS and only uses the resources required
-![](images/vm_containers.jpg)
+![](images/vm_containers.png)
 
 ### Demand and future of Docker
 
