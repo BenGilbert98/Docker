@@ -40,7 +40,7 @@
 ``` docker run -d -p 4000:4000 docs/docker/id ```
 ** - port mapping in our containers with localhost **
 ``` docker run -d -p <localhost-port>:<container-port>```
-``` docker run -d -p 4001:4000 <image_name>
+``` docker run -d -p 4001:4000 <image_name>```
 
 
 ### Copying a file to docker container
