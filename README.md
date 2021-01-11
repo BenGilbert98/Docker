@@ -32,3 +32,5 @@
 - ``` docker ps ```
 - ``` docker ps -a ``` to check existing containers
 
+### logging into a running container
+- ``` docker exec -it <name_of_container/id>``` 
