@@ -41,3 +41,7 @@
 ** - port mapping in our containers with localhost **
 ``` docker run -d -p <localhost-port>:<container-port>```
 ``` docker run -d -p 4001:4000 <image_name>
+
+
+### Copying a file to docker container
+``` docker cp <file_name> "<container_id>:<desired_file_path>"
