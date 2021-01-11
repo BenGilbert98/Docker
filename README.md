@@ -9,6 +9,7 @@
 ### Why Docker
 - Multi billion dollar companies are using or adopting Docker i.e Ebay, Netflix, Sky
 - Docker adoption is anticipated to be 50% by the end of 2020
+- 
 
 ### Difference between VM and Docker
 - Docker is light weight and user friendly
@@ -23,14 +24,14 @@
 
 ### Docker Commands
 - ``` docker pull <name_of_image> ```
-- ``` docker run <name_of_image> ```
+- ``` docker run <name_of_image> ``` runs the image in a container (-d to run detached)
 - ``` docker build -t <name_of_image> ```
 - ``` docker commit <name_of_image/container-id> ```
-- ``` docker start <container-id> ```
-- ``` docker stop <container-id/name> ```
-- ``` docker rm <container-id/name> ```
-- ``` docker ps ```
+- ``` docker start <container-id> ``` - starts the container with specified id
+- ``` docker stop <container-id/name> ``` - stops the container with specified id
+- ``` docker rm <container-id/name> ```- removes the container with specified id (data is removed)
+- ``` docker ps ``` to check currently running containers
 - ``` docker ps -a ``` to check existing containers
-
+- ``` docker images ``` to check existing images
 ### logging into a running container
 - ``` docker exec -it <name_of_container/id>``` 
