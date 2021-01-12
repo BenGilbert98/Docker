@@ -20,7 +20,7 @@
 ### Demand and future of Docker
 
 ### Docker API
-
+![](images/docker.png)
 
 ### Docker Commands
 - ``` docker pull <name_of_image> ```
@@ -33,6 +33,7 @@
 - ``` docker ps ``` to check currently running containers
 - ``` docker ps -a ``` to check existing containers
 - ``` docker images ``` to check existing images
+
 ### logging into a running container
 - ``` docker exec -it <name_of_container/id>``` 
 
@@ -45,3 +46,7 @@
 
 ### Copying a file to docker container
 ``` docker cp <file_name> "<container_id>:<desired_file_path>"```
+
+### Commiting changes to Dockerhub
+- ``` docker commit <image id> <username>/<repo_name>``` commits the changes to docker repo
+- ``` docker push ``` pushes the changes to docker repo
