@@ -33,9 +33,12 @@
 - ``` docker ps ``` to check currently running containers
 - ``` docker ps -a ``` to check existing containers
 - ``` docker images ``` to check existing images
+- ``` docker history <image_id> ``` to check 
+- ``` docker inspect <image_id> ``` to check the contents of the image
+- ``` docker logs <container_id> `` shows the logs of the containter (can direct to a text file with > logs.txt)
 
 ### logging into a running container
-- ``` docker exec -it <name_of_container/id>``` 
+- ``` docker exec -it <name_of_container/id>``` it means interactive shell
 
 ### Making docker docs available on our localhost
 ``` docker run -d -p 4000:4000 docs/docker/id ```
