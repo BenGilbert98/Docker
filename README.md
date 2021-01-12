@@ -35,10 +35,10 @@
 - ``` docker images ``` to check existing images
 - ``` docker history <image_id> ``` to check 
 - ``` docker inspect <image_id> ``` to check the contents of the image
-- ``` docker logs <container_id> `` shows the logs of the containter (can direct to a text file with > logs.txt)
+- ``` docker logs <container_id> ``` shows the logs of the containter (can direct to a text file with > logs.txt)
 
 ### logging into a running container
-- ``` docker exec -it <name_of_container/id>``` it means interactive shell
+- ``` docker exec -it <name_of_container/id>``` "it" means interactive shell
 
 ### Making docker docs available on our localhost
 ``` docker run -d -p 4000:4000 docs/docker/id ```
@@ -53,3 +53,18 @@
 ### Commiting changes to Dockerhub
 - ``` docker commit <image id> <username>/<repo_name>``` commits the changes to docker repo
 - ``` docker push ``` pushes the changes to docker repo
+
+### Building a docker image
+- To build a docker image we need to create a Dockerfile (Naming convention Dockerfile)
+- Used to automate tasks in an image / container
+#### **Information Required :**
+- Depends on client requirements
+- Need to know dependencies to run app
+- Need to wrap all the dependencies within Dockerfile and instruct the execution command
+
+#### Syntax and Keywords to create Dockerfile
+- ```FROM``` is used to tell docker which base image to use to build our image ```nginx as base image```
+- ```LABEL MAINTAINER=bgilbert@spartaglobal.com```
+- ```COPY``` files/folders from localhost to the container/image
+- ```EXPOSE``` default port
+- ```CMD``` the execution command ```["nginx", "-g", "daemon off"]```
