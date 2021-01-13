@@ -17,7 +17,7 @@ RUN npm install
 
 
 # Expose port 3001 to launch in the browser
-EXPOSE 3001
+EXPOSE 3000
 
 CMD ["node", "app.js"]
 
