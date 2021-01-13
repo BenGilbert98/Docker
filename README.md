@@ -17,7 +17,6 @@
 - Docker engine connects the container with OS and only uses the resources required
 ![](images/vm_containers.png)
 
-### Demand and future of Docker
 
 ### Docker API
 ![](images/docker.png)
@@ -68,3 +67,37 @@
 - ```COPY``` files/folders from localhost to the container/image
 - ```EXPOSE``` default port
 - ```CMD``` the execution command ```["nginx", "-g", "daemon off"]```
+
+## Microservices
+![](images/microservices.png)
+
+### Micro-Services
+-	Highly maintainable and testable
+-	Independently Deployable
+-	Loosely coupled
+-	Organised around business capabilities
+-	Owned by small teams
+
+### Who uses microservices?
+-	Netflix 
+-	Amazon
+-	PayPal
+
+### Monolith Architecture 
+![](images/monolith.png)
+-	Simple but has limitations and complexity
+-	Heavy apps can slow down start up time
+-	Each update results into redeploying the full stack
+-	Challenging to scale up on demand
+-	Fruitful for simple and lightweight apps
+
+### Kubernetes (k8)
+Orchestration tool for containers
+Helps manage containers and their behaviour (if container breaks or goes wrong)
+Kubernetes can then spin up another one automatically (similar to auto scaling)
+-	App always running
+-	Scale on demand
+-	Auto Scale
+-	Use individual IPs
+-	Create ingress controller
+-	Can deploy using Kubernetes
